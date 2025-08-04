@@ -36,7 +36,7 @@ header nav a, header nav strong {
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
     min-height: 500px;
     display: flex;
