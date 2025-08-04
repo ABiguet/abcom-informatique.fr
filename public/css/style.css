@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0; padding: 0;
+}
+header.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    /* Effet liquid glass */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(44, 62, 80, 0.75);
+    box-shadow: 0 2px 18px rgba(0,0,0,0.14);
+    transition: background-color 0.3s;
+}
+.navbar {
+    background-color: transparent !important;
+/* laisse le header gérer le fond */
+}
+header nav a, header nav strong {
+    color: white !important;
+}
+.parallax-section-header {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-section {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parallax-overlay {
+    background: rgba(44,62,80,0.55);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+.parallax-content h1, 
+.parallax-content h2 {
+    text-shadow: 0 3px 12px #222;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.section-title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.tarif {
+    background-color: #ecf0f1;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    height: 100%;
+}
+.img-portrait {
+    max-width: 280px; 
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px #bbb;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+@media (max-width: 900px) {
+    .parallax-section { 
+        background-attachment: scroll; 
+    }
+}
+    /* ... tes autres styles ... */
+    .btn-outline-light:hover, 
+    .btn-outline-light:focus {
+    background-color: #ffffff !important;
+    color: #2c3e50 !important;
+    border-color: #2c3e50 !important;
+}

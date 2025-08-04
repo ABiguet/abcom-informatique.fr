@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Dépannage, optimisation et formation informatique à Rouen. Services rapides, clairs, au juste prix pour PC, Mac et Linux. Devis gratuit. Assistance à distance.">
+  <meta property="og:title" content="ABCom-Informatique | Dépannage à Rouen" />
+  <meta property="og:description" content="Informaticien indépendant à Rouen, dépannage et formation pour PC, Mac et Linux. Service rapide, clair, honnête." />
+  <meta property="og:image" content="{{ asset('images/ico-2.png') }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abcom-informatique.fr/" />
+  <meta property="og:site_name" content="ABCom-Informatique" />
+  <title>ABCom-Informatique | Dépannage à Rouen</title>
+  <link rel="icon" href="{{ asset('images/ico-2-small.png') }}" type="image/png" sizes="32x32" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ABCom-Informatique",
+    "image": "https://tonsite.fr/images/ico-2.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Mont-Saint-Aignan",
+      "addressLocality": "Rouen",
+      "addressRegion": "Normandie",
+      "postalCode": "76000",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33667298302",
+    "email": "abcom_fr@icloud.com",
+    "url": "https://abcom-informatique.fr"
+  }
+</script>
+</head>
+<body>
+
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">ABCom-Informatique</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#diagnostic">Diagnostic</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#tarifs">Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="tel:+33667298302" class="btn btn-outline-light btn-sm me-2" aria-label="Appeler ABCom Informatique">
+            📞 <b>06 67 29 83 02</b>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- PARALLAX HERO -->
+<section id="accueil" class="parallax-section-header" style="background-image:url('{{ asset('images/banniere.png') }}');">
+  <div class="parallax-overlay"></div>
+  <div class="parallax-content">
+    <h1>🖥️ Dépannage informatique à Rouen</h1>
+    <p class="lead">Rapide, clair, au juste prix.<br />Votre technicien indépendant & polyvalent.</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="mb-4"></section>
+
+  <!-- SERVICES -->
+<section id="services" class="mb-5">
+  <h2 class="section-title">Services proposés</h2>
+  <div class="row g-4">
+    <!-- Colonne 1 de l'accordéon -->
+    <div class="col-12 col-md-6">
+      <div class="accordion" id="servicesAccordionLeft">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingDepannage">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDepannage" aria-expanded="false" aria-controls="collapseDepannage">
+              Dépannage PC sous Windows : pannes et virus
+            </button>
+          </h2>
+          <div id="collapseDepannage" class="accordion-collapse collapse" aria-labelledby="headingDepannage" data-bs-parent="#servicesAccordionLeft">
+            <div class="accordion-body">
+              Ordinateur qui plante, écran noir, virus… Je trouve et corrige la cause du problème rapidement.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingMaintenance">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaintenance" aria-expanded="false" aria-controls="collapseMaintenance">
+              Maintenance logicielle et optimisation système
+            </button>
+          </h2>
+          <div id="collapseMaintenance" class="accordion-collapse collapse" aria-labelledby="headingMaintenance" data-bs-parent="#servicesAccordionLeft">
+            <div class="accordion-body">
+              Nettoyage logiciel, suppression de programmes inutiles, mises à jour, accélération (Windows ou Mac).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNettoyage">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNettoyage" aria-expanded="false" aria-controls="collapseNettoyage">
+              Nettoyage complet et entretien matériel
+            </button>
+          </h2>
+          <div id="collapseNettoyage" class="accordion-collapse collapse" aria-labelledby="headingNettoyage" data-bs-parent="#servicesAccordionLeft">
+            <div class="accordion-body">
+              Je démonte minutieusement votre ordinateur pour retirer la poussière et les saletés qui l’empêchent de bien respirer.<br>
+              Je remplace aussi la pâte thermique, ce qui aide à garder votre appareil au frais et évite les surchauffes.<br>
+              Résultat : un ordinateur plus fiable, qui dure plus longtemps, et des performances retrouvées.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingUpgrade">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUpgrade" aria-expanded="false" aria-controls="collapseUpgrade">
+              Accélération PC lent avec SSD et augmentation de RAM
+            </button>
+          </h2>
+          <div id="collapseUpgrade" class="accordion-collapse collapse" aria-labelledby="headingUpgrade" data-bs-parent="#servicesAccordionLeft">
+            <div class="accordion-body">
+              Votre ordinateur démarre lentement ou rame quand plusieurs programmes tournent ?<br>
+              <strong>Installation de disque SSD rapide</strong> et/ou <strong>augmentation de mémoire RAM</strong> pour plus de fluidité. Je vérifie la compatibilité et vous conseille honnêtement.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Colonne 2 de l'accordéon -->
+    <div class="col-12 col-md-6">
+      <div class="accordion" id="servicesAccordionRight">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingReinstall">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReinstall" aria-expanded="false" aria-controls="collapseReinstall">
+              Réinstallation complète de Windows avec licence officielle
+            </button>
+          </h2>
+          <div id="collapseReinstall" class="accordion-collapse collapse" aria-labelledby="headingReinstall" data-bs-parent="#servicesAccordionRight">
+            <div class="accordion-body">
+              Je procède à une réinstallation propre de Windows, avec une licence officielle si nécessaire (Home ou Pro).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingInstall">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstall" aria-expanded="false" aria-controls="collapseInstall">
+              Installation & configuration d’équipements et logiciels
+            </button>
+          </h2>
+          <div id="collapseInstall" class="accordion-collapse collapse" aria-labelledby="headingInstall" data-bs-parent="#servicesAccordionRight">
+            <div class="accordion-body">
+              Installation d’imprimante, box internet, sauvegarde cloud, logiciels… Je m’occupe de tout avec pédagogie.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingConseil">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConseil" aria-expanded="false" aria-controls="collapseConseil">
+              Conseils personnalisés & formation informatique
+            </button>
+          </h2>
+          <div id="collapseConseil" class="accordion-collapse collapse" aria-labelledby="headingConseil" data-bs-parent="#servicesAccordionRight">
+            <div class="accordion-body">
+              Accompagnement à la sécurité, l’achat, la prise en main, adapté à votre niveau et à votre rythme.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingLinuxMac">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinuxMac" aria-expanded="false" aria-controls="collapseLinuxMac">
+              Maintenance & installation Mac et Linux
+            </button>
+          </h2>
+          <div id="collapseLinuxMac" class="accordion-collapse collapse" aria-labelledby="headingLinuxMac" data-bs-parent="#servicesAccordionRight">
+            <div class="accordion-body">
+              Installation et dépannage sur Mac (iMac, MacBook) : optimisation, transfert de données, réinstallation.<br>
+              Je peux aussi installer Linux seul ou en dual boot, et former à son utilisation.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- PARALLAX -->
+  <section class="parallax-section mb-5" style="background-image:url('{{ asset('images/image-3.png') }}');">
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <h2>Un ordinateur lent n'est pas forcément bon à jeter !</h2>
+      <strong>Ajouter un disque SSD</strong> (stockage ultra-rapide) <strong>ou augmenter la mémoire vive (RAM)</strong> <br>
+      Ce sont les deux meilleures solutions pour transformer la rapidité de votre PC ou Mac : démarrage plus rapide, plusieurs programmes ouverts sans ralentissement…<br>
+      Je vous oriente honnêtement vers la solution la plus adaptée à votre usage et à votre budget.
+    </div>
+  </section>
+
+  <!-- DIAGNOSTIC -->
+    <section id="diagnostic" class="mb-5">
+    <h2 class="section-title">Diagnostic clair & sans engagement</h2>
+
+    <p><strong>Je vous propose un vrai diagnostic complet à 39 €.</strong></p>
+
+    <ul>
+        <li>🔍 Analyse de l’ordinateur (PC, Mac ou Linux)</li>
+        <li>🛠 Rapport du problème + estimation du coût de réparation</li>
+        <li>⚖️ <strong>Avis honnête</strong> : si la réparation ne vaut pas le coup, je vous le dis</li>
+        <li>📄 <strong>Un devis sur mesure est toujours fourni</strong>, simple et sans jargon technique.</li>
+    </ul>
+
+    <p>Le diagnostic peut être effectué directement à votre domicile pour un premier bilan rapide et efficace.  
+Si toutefois le problème nécessite une analyse plus approfondie, j’emmène votre ordinateur en atelier pour un diagnostic détaillé et précis.</p>
+
+    <div class="alert alert-success mt-4" role="alert">
+        ✅ <strong>Et surtout :</strong> les 39 € vous sont entièrement <strong>remboursés si vous acceptez le devis</strong>.<br />
+        👉 Vous ne payez le diagnostic que si vous ne donnez pas suite.
+    </div>
+
+    <p class="text-muted mt-3">
+        Le diagnostic est un réel service de conseil : vous repartez avec une réponse claire, même si vous choisissez de ne pas réparer.
+    </p>
+    </section>
+
+  <!-- TARIFS -->
+  <section id="tarifs" class="mb-5">
+    <h2 class="section-title">Tarifs</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="tarif h-100 shadow-sm">
+          <h3 class="h5 mb-3">À l'heure</h3>
+          <p><strong>À domicile :</strong> 15 € fixes + 1 €/km<br />
+             <strong>À distance :</strong> 30 €/h<br />
+             <strong>Formation :</strong> 40 €/h</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="tarif h-100 shadow-sm">
+          <h3 class="h5 mb-3">Forfaits & prestations</h3>
+          <ul class="mb-0">
+            <li>Diagnostic complet : 39 € (déduit si réparation)</li>
+            <li>Nettoyage complet + changement pâte thermique : PC fixe 69 € / PC portable 89 €</li>
+            <li>Nettoyage et optimisation logicielle : 49 €</li>
+            <li>Réinstallation Windows + licence Famille / Pro : 150 € / 200 €</li>
+            <li>Réinstallation Windows sans licence : 70 €</li>
+            <li>Mise à niveau SSD (pièce incluse) : dès 90 €</li>
+            <li>Ajout ou upgrade de mémoire RAM : sur devis (en fonction du modèle et de la capacité)</li>
+            <li>Installation imprimante / box : 30 € (+ déplacement) </li>
+            <li>Installation Linux ou dual-boot : sur devis</li>
+            <li>Dépannage ou conseils Mac : tarif horaire ou devis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARALLAX -->
+  <section class="parallax-section mb-5" style="background-image:url('{{ asset('images/windows-mac-linux.png') }}')">
+    <div class="parallax-overlay"></div>
+    <div class="parallax-content">
+      <h2>Windows, Mac ou Linux : je m’adapte à vous</h2>
+      <p>Quel que soit votre matériel ou votre niveau, je suis là pour vous accompagner.</p>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="mb-5 text-center">
+    <h2 class="section-title">À propos</h2>
+    <img src="{{ asset('images/portrait.jpeg') }}" alt="Portrait" class="img-portrait mb-3" />
+    <p><strong>Aurélien</strong>, technicien indépendant sous <strong>ABCom-Informatique</strong>.</p>
+    <p>Je suis développeur de formation, passionné d’informatique et de nouvelles technologies. J’aide au quotidien les particuliers et indépendants à retrouver confiance dans leur matériel.</p>
+    <p>📍 Basé à Mont-Saint-Aignan – Interventions sur Rouen et alentours.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="mb-5 text-center">
+    <h2 class="section-title">Contact</h2>
+    <a href="tel:+33667298302" class="btn btn-primary btn-lg mb-3" aria-label="Appeler ABCom Informatique">
+      📞 Appeler ABCom-Informatique<br />
+      <small>06 67 29 83 02</small>
+    </a>
+    <p><strong>Email :</strong> <a href="mailto:abcom_fr@icloud.com">abcom_fr@icloud.com</a></p>
+    <p>SMS / appel ou formulaire bientôt en ligne.</p>
+    <p>🧑‍💻 Assistance à distance disponible (TeamViewer / AnyDesk)</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 - ABCom-Informatique – Technicien informatique indépendant à Rouen</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
