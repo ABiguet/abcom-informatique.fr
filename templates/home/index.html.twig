@@ -13,6 +13,7 @@
   <title>ABCom-Informatique | Dépannage à Rouen</title>
   <link rel="icon" href="{{ asset('images/ico-2-small.png') }}" type="image/png" sizes="32x32" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <script type="application/ld+json">
@@ -304,7 +305,23 @@ Si toutefois le problème nécessite une analyse plus approfondie, j’emmène v
 <footer>
   <p>&copy; 2025 - ABCom-Informatique – Technicien informatique indépendant à Rouen</p>
 </footer>
+<button class="scroll-top" title="Haut de page" onclick="window.scrollTo({top:0, behavior:'smooth'});"><i class="bi bi-chevron-up"></i></button>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Apparition du bouton "haut de page"
+    window.addEventListener('scroll', ()=>{
+      if(window.scrollY>190) document.querySelector('.scroll-top').style.display='block';
+      else document.querySelector('.scroll-top').style.display='none';
+    });
+    // Activation liens navbar
+    let navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    navLinks.forEach(link=>{
+      link.addEventListener('click', function(){
+        navLinks.forEach(el=>el.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
